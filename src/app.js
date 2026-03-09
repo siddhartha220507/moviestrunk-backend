@@ -9,20 +9,22 @@ const cors = require("cors");
 
 const app = express();
 
-const whitelist = ['http://localhost:5173', 'http://localhost:5174'];
-if (process.env.FRONTEND_URL) {
-    whitelist.push(process.env.FRONTEND_URL);
-}
+const allowedOrigins = [
+    'http://localhost:5173', 
+    'http://localhost:5174',
+    'https://frontend-commit.vercel.app', // Adding user's exact primary vercel domain
+    ...(process.env.FRONTEND_URL ? process.env.FRONTEND_URL.split(',') : [])
+];
 
 app.use(cors({
     origin: function (origin, callback) {
-        if (!origin || whitelist.indexOf(origin) !== -1) {
+        if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));
         }
     },
-    credentials: true
+    credentials: true,
 }));
 
 app.use(express.json());
