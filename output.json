@@ -1,0 +1,132 @@
+{
+  "status": {
+    "code": 10000,
+    "description": "Success",
+    "req_id": "3f23aa3f884948a7b4106ad2ad9d4aed"
+  },
+  "outputs": [
+    {
+      "status": {
+        "code": 10000
+      },
+      "data": {
+        "concepts": [
+          {
+            "id": "ai_xxxx00FF",
+            "value": 0.9951126
+          },
+          {
+            "id": "ai_jc99KZQQ",
+            "name": "yuki matsuzaki",
+            "value": 0.0018388942
+          },
+          {
+            "id": "ai_1SGK0jxd",
+            "name": "manish dayal",
+            "value": 0.001057183
+          },
+          {
+            "id": "ai_6MMcQlWt",
+            "name": "wilmer valderrama",
+            "value": 0.00020562125
+          },
+          {
+            "id": "ai_DKsKtZBR",
+            "name": "david berrie",
+            "value": 0.00014644346
+          },
+          {
+            "id": "ai_QPdCQlV7",
+            "name": "jussie smollett",
+            "value": 0.00012769994
+          },
+          {
+            "id": "ai_fZ32m117",
+            "name": "ryan ochoa",
+            "value": 0.00010947626
+          },
+          {
+            "id": "ai_ZG0pHW0q",
+            "name": "zayn malik",
+            "value": 0.00007274652
+          },
+          {
+            "id": "ai_9Q9nrs4g",
+            "name": "rick gonzalez",
+            "value": 0.000069156195
+          },
+          {
+            "id": "ai_5VKqkLLr",
+            "name": "nadji jeter",
+            "value": 0.000052135565
+          },
+          {
+            "id": "ai_g781XfH2",
+            "name": "ryan potter",
+            "value": 0.000051261388
+          },
+          {
+            "id": "ai_hzFs4FNS",
+            "name": "frankie delgado",
+            "value": 0.000042196756
+          },
+          {
+            "id": "ai_LQjSh8z8",
+            "name": "joe jonas",
+            "value": 0.00004188703
+          },
+          {
+            "id": "ai_BksTSwbG",
+            "name": "jonas brothers",
+            "value": 0.000041867697
+          },
+          {
+            "id": "ai_Bc8jjKdZ",
+            "name": "michael angarano",
+            "value": 0.000040867584
+          },
+          {
+            "id": "ai_JpmCgsMW",
+            "name": "arutro castro",
+            "value": 0.00003906338
+          },
+          {
+            "id": "ai_crmmtCTW",
+            "name": "adrian grenier",
+            "value": 0.00003745713
+          },
+          {
+            "id": "ai_3M4TGlxp",
+            "name": "anthony ramos",
+            "value": 0.000031449792
+          },
+          {
+            "id": "ai_vCDZKPrj",
+            "name": "jay chou",
+            "value": 0.000030543786
+          },
+          {
+            "id": "ai_M8FW7PBG",
+            "name": "hoodie allen",
+            "value": 0.000027357479
+          }
+        ]
+      }
+    }
+  ],
+  "runner_selector": {
+    "deployment": {
+      "id": "deploy-celebrity-face-recognition-wkxc",
+      "user_id": "clarifai",
+      "nodepools": [
+        {
+          "id": "shared-nodepool-gpu-nvidia-l4",
+          "compute_cluster": {
+            "id": "shared-compute-gcp-east4",
+            "user_id": "clarifai"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -3,6 +3,7 @@ const authRoutes = require('./routes/authRoutes');
 const favoriteRoutes = require('./routes/favoriteRoutes');
 const historyRoutes = require('./routes/historyRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const faceRoutes = require('./routes/faceRoutes');
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
@@ -30,5 +31,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/favorites', favoriteRoutes);
 app.use('/api/history', historyRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api', faceRoutes); // Mounts /api/celebrity
 
 module.exports = app;
