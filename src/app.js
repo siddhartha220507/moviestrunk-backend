@@ -10,6 +10,10 @@ const cors = require("cors");
 const app = express();
 
 const whitelist = ['http://localhost:5173', 'http://localhost:5174'];
+if (process.env.FRONTEND_URL) {
+    whitelist.push(process.env.FRONTEND_URL);
+}
+
 app.use(cors({
     origin: function (origin, callback) {
         if (!origin || whitelist.indexOf(origin) !== -1) {
